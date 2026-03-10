@@ -7,14 +7,13 @@ import {ModalController} from '@ionic/angular';
   selector: 'app-test-modal',
   templateUrl: './test-modal.component.html',
   imports: [
+    IonContent,
     IonHeader,
     IonToolbar,
     IonTitle,
     IonButtons,
-    IonButton,
-    IonContent
-  ],
-  styleUrls: ['./test-modal.component.scss']
+    IonButton
+  ]
 })
 export class TestModalComponent {
 

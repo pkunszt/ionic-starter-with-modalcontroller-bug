@@ -7,19 +7,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="false">
+<ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">{{ folder }}</ion-title>
-      <ion-buttons slot="primary">
-        <ion-button>Settings</ion-button>
-      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <ion-button (click)="openModal = true">Show</ion-button>
-    <ion-button (click)="openController()">Show2</ion-button>
+    <ion-button (click)="openModal = true">Modal Inline</ion-button>
+    <ion-button (click)="openUsingController()">Modal via Controller</ion-button>
   </div>
 </ion-content>
 <ion-modal [isOpen]="openModal" (didDismiss)="openModal=false">
